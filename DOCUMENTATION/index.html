@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title></title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre,code { font-family:"Consolas", Courier New, Courier, monospace; padding:15px; background:#f7f7f7; margin:0px 0px 18px; border:1px solid #e5e5e5; line-height:18px; color:#000 }
+code { padding:0px 3px; background-image:none; background:#f5f5f5; border:none }
+pre { white-space:pre-wrap; white-space:-moz-pre-wrap; white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	  <h3 class="center alt">Documentation by &ldquo;Ansonika&rdquo; v1.8</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;BESTOURS - HTML Site template&rdquo;</h1>
+		
+		<div class="borderTop">
+		  <div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20 November 2016<br>
+                    Last update: 21 June 2023<br>
+					By: Ansonika</strong>
+			  </p>
+	    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to post a comment on item page. If you are happy with the theme, please <strong>TAKE A MOMENT TO RATE IT</strong> from your DOWNLOADS PAGE.
+Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files, Structure and basic modifications</a></li>
+<li><a href="#php">PHP contact form, newsltetter form and plan a visit form</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credit</a></li>
+            <li><a href="#updates">UPDATES</a></li>
+		</ol>
+   
+
+      <hr>
+        
+  <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+	  <p> This theme has a fixed centered layout 1170px. It's based on Boostrap framework grid. It's ULTRA RESPONSIVE!!. Suitable for tour agencies, travel industry, tours agencies. Can be applyed for every type of tours.  It comes with 3 color schemes.
+	  </p>
+<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files Structure and basic modfication</strong> - <a href="#toc">top</a>	  </h3>
+	  <p>The css files are inside the css folder (not minified and minified versions included) .To modify colors, typografy, button style ecc....find the realtive comment line in style.css. 
+      <strong>We reccomend to apply every changes in css/custom.css in order to makes future updates easly to apply.</strong>
+      Below how the file is organized:</p>
+<p>1. SITE STRUCTURE and TYPOGRAPHY<br>
+  - 1.1 Typography<br>
+  - 1.2 Buttons<br>
+  - 1.3 Structure</p>
+<p>2. CONTENT<br>
+  - 2.1 Home all versions<br>
+  - 2.2 Detail page<br>
+  - 2.3 List page<br>
+  - 2.4 Grid page<br>
+  - 2.5 Contact page<br>
+  - 2.6 Faq page<br>
+  - 2.7 Gallery page<br>
+  - 2.8 Contact page<br>
+  - 2.9 Mantainance<br>
+  - 2.10 Faq page<br>
+  - 2.11 Blog</p>
+<p>3. COMMON<br>
+  3.0 Wrapper container<br>
+  3.1 Preloader<br>
+  3.2  Parallax bg<br>
+  3.3 Spacing<br>
+  3.4 Ribbons<br>
+  3.5 Scroll top button <br>
+  3.6 Owl Carousel<br>
+  3.7 Select picker<br>
+  3.8 Pagination<br>
+  3.9 Banner<br>
+  3.10 Forms<br>
+  3.11 Search modal<br>
+  3.12 Accordion</p>
+<pre>
+<p><strong>Note<br></strong>Every page use these styles as default:<br>&lt;!-- BASE CSS --&gt;<br>&lt;link href=&quot;css/animate.min.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/responsive.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/menu.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/icon_fonts/css/all_icons.min.css&quot; rel=&quot;stylesheet&quot;&gt;</p><p>Some pages required additional specific css (example)<br>&lt;!-- SPECIFIC CSS --&gt;<br>&lt;link href=&quot;css/date_time_picker.css&quot; rel=&quot;stylesheet&quot;&gt;<br>&lt;link href=&quot;css/timeline.css&quot; rel=&quot;stylesheet&quot;&gt;</p></pre>
+<p><strong>Change the logo<br>
+</strong>To change the logo, simply use your PNG24 file (suggested logo height is 34px)Below how is coded</p>
+<pre>LOGO HOME VERSIONS WITH H1 FOR SEO PURPOSES (change sizes via css if you need in style.css)
+
+&lt;div id=&quot;logo_home&quot;&gt;<br>&lt;h1&gt;&lt;a href=&quot;index.html&quot; title=&quot;Bestours&quot;&gt;Bestours template&lt;/a&gt;&lt;/h1&gt;<br>&lt;/div&gt;
+
+LOGO NORMAL<br>&lt;a href=&quot;index.html&gt;&lt;img src=&quot;img/logo.png&quot; width=&quot;145&quot; height=&quot;34&quot; alt=&quot;&quot; id=&quot;logo&quot; data-retina=&quot;true&quot;&gt;&lt;/a&gt;
+
+REMEMBER to create the retina version that have double size of the orginal dimension and name it with _2x<br>(in this case for example width:290px height:68px logo_2x.png).
+</pre>
+
+<p><strong>Change the color scheme<br>
+</strong>The item comes with 2 different color schemes ind addition to the default one. </p>
+<pre>
+In order to apply the color scheme easly without modify every page we suggest to import the color scheme inside
+css/custom.css (the files you should use for your custom styles) as the example below:
+
+@import url(&quot;color-scheme.css&quot;);
+
+Of course you can create your own starting from one of the 2 color schemes provided.</pre>
+
+<br>
+
+<p><strong>Set up  site launch page located in site_launch folder</strong><br>
+  Open functions.js and find this line of code:</p>
+<pre><strong>SET THE DATE</strong><br>Open site_launch/js/functions.js and find this line.<br><br>var target = new Date(&quot;July 15 2014 13:30:00 GMT+0100&quot;); //replace with YOUR DATE
+
+<strong>SET NEWSLETTER EMAIL</strong><br>Open site_launch/assets/newsletter.php and find this commented code.<br><br>//$address = &quot;your email address&quot;;<br>$address = &quot;test@domain.com&quot;;<br></pre>
+
+
+
+<p><strong>How MAPS works</strong><br>
+  Open js/map.js and find this line of code:</p>
+<pre>Let's take as example the map used in detail-page.html page. Open js/map.js.
+
+'Map': [<br>			{<br>				name: 'Lorem Ipsum',<br>				location_latitude: 48.870587, <br>				location_longitude: 2.318943,<br>				map_image_url: 'img/thumb_map_1.jpg',<br>				name_point: 'Lorem Ipsum',<br>				description_point: 'Place Charles de Gaulle, 75008 &lt;br&gt;Paris FRANCE&lt;br&gt;&lt;br&gt;+45 423 445 99 / +45 423 445 99 ',<br>				url_point: ''<br>			}
+
+
+The marker/pins are located in img/pins folder. Each pin name have to match with the category<br>name. In this case for example is Map.png...so automatically every point in the same category has the<br>same pin/marker. Of course you can add how many markers you need for multiple points.
+
+CHANGE THE DEFAULT COLOR STYLE OF THE MAP<br>You can add you onw style for example in js/map.js...look for this line (aprox line 60):
+<br>styles: []
+
+inside of the square graphs, place you styles. You can find some nice premade styles 
+here https://snazzymaps.com/.
+
+</pre>
+
+
+     <p><strong>Change the address of Google map in contact page</strong>: open mapmarker_func.js and change with your latitude and longitude + your full address. You can change also your map marker (that has to be png24); you can use also the psd provided in the psd folder.</p>
+ <pre>//set up markers <br>		var myMarkers = {&quot;markers&quot;: [<br>				{&quot;latitude&quot;: &quot;51.511732&quot;, &quot;longitude&quot;:&quot;-0.123270&quot;, &quot;icon&quot;: &quot;img/map-marker.png&quot;}<br>			]<br>		};<br>		<br>		//set up map options<br>		$(&quot;#map&quot;).mapmarker({<br>			zoom	: 14,<br>			center	: 'Covent Garden London', //YOUR FULL ADDRESS <br>			markers	: myMarkers<br>		});</pre>
+
+<strong>COMMON ISSUE ON GOOGLE MAP</strong> (if the Google map works locally but does not works once the site will be online)<br>
+  <pre>In some cases Google require an api key for the Google map.
+<br>You can create your own "Standard api key" here <br>by clicking on &quot;GET KEY&quot; BUTTON (on Authentication for the standard API—API keys section), <br>and follow the steps.
+<a href="https://developers.google.com/maps/documentation/javascript/get-api-key#key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key#key</a>
+
+Here some additionale info on how to create an API KEY <a href="http://thegrue.org/google-map-javascript-api-key/">http://thegrue.org/google-map-javascript-api-key/</a><br><br>Then replace at the bottom of every page that use Google map, this line<br>
+&lt;script src=&quot;http://maps.googleapis.com/maps/api/js&quot;&gt;&lt;/script&gt; OR 
+&lt;script type="text/javascript" src="<a target="_blank" href="http://maps.googleapis.com/maps/api/js?sensor=false">http://maps.googleapis.com/maps/api/js?sensor=false</a>"&gt;&lt;/script&gt;<br><br>with your api key included, like the example below<br>&lt;script src="<a target="_blank" href="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaO0WhIut5GCNr9y8xTA36EPj87NEHptM">http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY</a>"&gt;&lt;/script&gt;<br><br>
+NOTE: if you apply an api key, the map locally does not load. You must upload your site.</pre>
+  
+<p><strong>Home with video header (fallback with a background image in tablets and mobile)</strong><br>
+ </p>
+<pre>1)Save you mp4 and ogv video in the video folder.The name of the files must match the datasource tag:<br>
+Example<br>data-teaser-source=&quot;video/intro&quot; (folder/name_files)=<br>paris.mp4<br>paris.ogv
+
+You can change also the opacity in style.css <br><br>video {<br>	position: absolute;<br>	top: 0;<br>	bottom: 0;<br>	left: 0;<br>	right: 0;<br>	opacity: 0.6;<br>}<br><br>2) To change the fallback background image for mobiles and tablets open css/style.css and 
+find this class in the &quot;responsive section&quot;<br><br>#hero_video{
+background: #333 url(../img/video_fallback.jpg);
+background-size:cover;
+background-position: center bottom;}<br></pre>
+<p><strong>THE GRID</strong><br> 
+      Please refer to this <a href="http://getbootstrap.com/">documentation Boostrap</a></p>
+    
+      <hr>
+<br>
+      <h3 id="php"><strong>C) PHP files: Booking, Contact form, Newsletter subscription, Newsletter in site launch</strong> - <a href="#php">top</a></h3>
+      <p>All the files you need are located in assets folder(for the site launch is site_launch/assets). If you need to change the allert messages open assets/validate.js. Below an example taken from newsletter.php; all the files are well commented<strong>.<br>
+      </strong><br>
+        <img src="assets/images/mail.png" alt="" width="548" height="160" style="border:1px solid #ccc;">      </p>
+      </p>
+      <p><strong>Check availability form and contact form<br>
+        </strong>It's the same logic and script of check newsletter. If you doesn't recieve the email please first check:<br>
+      1) Your spam folder<br>
+      2) If you hosting requires special settings (SMTP Authentication is not supported by the script)<br>
+      3) If your email  has to be managed from the same hosting provider<br>
+      4) Set the permission of the asset folder on your host to 755 your FTP client
+      </p>
+      </p>
+   <strong>Note:</strong> just a quick note for the the booking form for the detail page :<br>
+      <pre>There is an hidden input field just to recognize from where the email comes. here you have to set<br>the name of the tour, like the example below<br>
+&lt;input name=&quot;tour_name&quot; id=&quot;tour_name&quot; type=&quot;hidden&quot; value=&quot;Tour name&quot;&gt;	</pre>
+
+      <hr>
+<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>This theme use these Javascript (minified versions included). i've included the common theme scripts in a single file for a fast edit and load (or if you prefer you can find the same js in separate files in js folder).</p>
+      <p><strong>common_scripts.js content:
+      </strong>
+      <ul>
+      <li>Menu</li>
+      <li>Boostrap.js</li>
+      <li>Search modal</li>
+      <li>Retina-replace.js</li>
+      <li>Parallax.js</li>
+      <li>Magnifc-popup.js</li>
+      <li>Wow.js</li>
+      <li>Owl.carousel.js</li>
+      <li>Selectpicker dropdown</li>
+      </ul>
+      </p>
+	  <hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>I've used the following images, icons or other files as listed. For the js listed below, you can find the more documentation on the relative sites.
+		
+	  <ul>
+        <li><a href="https://getbootstrap.com/docs/3.4/">Bootstrap</a></li>
+        <li><a href="http://fontello.com/">Fontello</a></li>
+        <li><a href="http://nicinabox.com/superslides/">Background images slider</a></li>       
+        <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific popup</a></li>
+        <li><a href="http://mynameismatthieu.com/WOW">Wow</a></li>
+        <li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+        <li><a href="http://github.com/leonsmith/retina-replace-js">Retina replace</a></li>
+        <li><a href="http://pixelcog.github.io/parallax.js/">Parallax</a></li>
+        <li><a href="http://jquery.com/">Jquery</a></li>
+        <li><a href="http://owlgraphic.com/owlcarousel/">Owl carousel</a></li>
+        <li><a href="http://www.primebox.co.uk/projects/jquery-cookiebar/">Jquery Cookie bar</a></li>
+        <li><a href="http://www.bulgaria-web-developers.com/projects/javascript/selectbox/">Selectpicker dropdown</a></li>
+        <li><a href="https://github.com/eternicode/bootstrap-datepicker/">Bootsrap datepicker</a></li>
+        <li><a href="https://github.com/seaofclouds/tweet">Twitter feed</a></li>
+	  </ul>
+		<p>Images are not included.</p>
+<hr>
+
+<h3 id="updates"><strong>F) UPDATES</strong> - <a href="#toc">top</a></h3>
+
+<p>V.1.8 21 June 2023</p>
+      <ul>
+        <li>Updated jQuery Version</li>
+      </ul>
+<pre>Updated jQuery Version
+Update on footer of every page the jQuery Version as below (of course copy the new file from js folder)
+&lt;script src=&quot;js/jquery-3.7.0.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+<p>V.1.7 15 February 2023</p>
+      <ul>
+        <li>Updated jQuery Version</li>
+        <li>Removed conditional comments for old browsers in the html code not more necessary</li>
+      </ul>
+<pre>Updated jQuery Version
+Update on footer of every page the jQuery Version as below (of course copy the new file from js folder)
+&lt;script src=&quot;js/jquery-3.6.3.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+
+<p>V.1.6 8 August 2022</p>
+      <ul>
+        <li>Removed "get_magic_quotes_gpc" php function deprecated for latest PHP versions</li>
+      </ul>
+<pre>How to update:
+
+Update the following files: assets/contact.php + review.php or delete the following lines of code 
+
+if(get_magic_quotes_gpc()) {
+	$message_contact = stripslashes($message_contact);
+}</pre>
+      
+      
+<p>V.1.5 14 January 2022</p>
+      <ul>
+        <li>Updated Documentation</li>
+      </ul>
+      
+ <p>V.1.4 28 July 2021</p>
+      <ul>
+        <li>Updated jQuery Version</li>
+        <li>Updated Owl Carousel</li>
+        <li>Dismiss Retina Plugin</li>
+      </ul>
+      <pre>HOW TO UPDATE FROM PREVIOUS VERSION (Same changes for every nichie versions)
+
+Updated jQuery Version
+1) Update on footer of every page the jQuery Version as below
+&lt;script src=&quot;js/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;
+
+2) Update the following files:
+- js/jquery.tweet.min.js
+- js/functions.js
+
+Updated Owl Carousel (Required for the new jQuery version)
+1) Update js/common_scripts_min.js
+2) Update css/style.css (In particular the section 3.6 Owl Carousel)
+3) Copy and paste in the css folder the following images: owl.video.play.png + ajax-loader.gif
+4) In the html code where the carousel is used add the class &quot;owl-theme&quot; or &quot;owl-carousel owl-theme&quot; or compare with the updated files...mainly index, about and detail pages (in the detail-page.html the first carousel class now is &quot;carousel_detail&quot;
+5) Update: js/functions.js  + js/sidebar_carousel_detail_page_func.js
+6) In about page on footer script set loop:false
+
+Dismiss Retina Plugin
+1) Update js/common_scripts_min.js
+2) Instead use double image original image and declare the dimensions on the img tag in the html, or better use .svg formato
+3) Delete the followning lines in css/style.css
+
+@media only screen and (min--moz-device-pixel-ratio: 2),<br>only screen and (-o-min-device-pixel-ratio: 2/1),<br>only screen and (-webkit-min-device-pixel-ratio: 2),<br>only screen and (min-device-pixel-ratio: 2) {<br>	#logo_home h1 a {<br>		background-image: url(../img/logo_2x.png);<br>		background-size: 145px 34px;<br>	}<br>}</pre>
+  <p>V.1.3 18 February 2021</p>
+      <ul>
+        <li>Updated Documentation</li>
+      </ul>
+        <p>V.1.2 (14 December 2018)</p>
+      <ul>
+        <li>Removed @import</li>
+      </ul>
+        <pre>How to update from previous version:
+
+1) Update the css/custom.css
+2) For site launch page update index.html and style.css</pre>
+  <p>V.1.1 (28 Feb 2017)</p>
+        <ul>
+        <li>Fixed an issue related to the Coming soon page (files to update: coming_soon/style.css, coming_soon/index.html, coming_soon/assets/newsletter.php)</li>
+        </ul>
+
+<hr>
+
+<h3>Maybe you are interested in</h3>
+<p><a href="https://themeforest.net/item/panagea-travel-and-tours-listings-template/21957086?ref=ansonika"><img src="assets/images/01-panagea-tours-hotels-restaurants-listing.jpg" width="590" height="300"></a></p>
+<p><a href="https://themeforest.net/item/albert-hotel-and-bedbreakfast/15870620?ref=ansonika"><img src="assets/images/01-albert-hotel-bed-and-breakfast.jpg" width="590" height="300"></a></p>
+<p><a href="https://themeforest.net/item/sparker-directory-and-listings-template/22716006?ref=ansonika"><img src="assets/images/01-sparker-directory-listings-template.jpg" width="590" height="300"></a></p>
+<p><a href="https://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika"><img src="assets/images/01-citytours-travel-tour-template.jpg" width="590" height="300"></a></p>
+<p><a href="https://themeforest.net/item/travelguide-travel-guides-places-and-directions/17323444?ref=ansonika"><img src="assets/images/01-travelguide-travel-site-template.jpg" width="590" height="300"></a></p>
+<p><a href="https://themeforest.net/item/countryholidays-country-hotel-and-bed-breakfast/11800971?ref=ansonika"><img src="assets/images/01-country-hotel-accommodation-b&b.jpg" width="590" height="300"></a></p>
+<p><strong><br>
+    <img src="assets/images/avatar.jpg" width="80" height="80"><br>
+	  <br>
+    Once again, thank you so much for purchasing this theme. Please take a moment to rate it from your Downloads page.</strong><br> 
+		  
+<h3>Need support?</h3>
+For support contact me using the form on my profile page <span class="text_medium">with subject <strong>[ThemeForest Support]  Template name</strong></span>, or via the Support Tab on the item page. You will receive an answer within 24-48 hours (working days)  GMT  +1.
+<ul>
+<li>I only provide support for fixing bugs or small issues on my items.</li>
+<li>I don't provide free support for additional custom modifications to the items.</li>
+<li>Please provide your site link, screenshots and other information about your issue.</li>
+<li><a href="http://themeforest.net/page/item_support_policy" rel="nofollow"><strong>Envato support terms</strong></a></li>
+</ul>
+<h3>Need customization or availability for freelance projects?</h3>
+Just send an email via profile page form; please don't forget to specify:
+<ul>
+<li>if you are a company, agency or private user</li>
+<li>all the information about your projects, needs, site urls, project sheet, etc..</li>
+<li>from which country you are</li>
+<li>if you have a deadline</li>
+<li>if you have basic knowledge of  HTML , CSS, JS,  PHP</li>
+</ul>
+<p class="append-bottom alt large"><strong>Ansonika</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+</div><!-- end div .container -->
+</body>
+</html>
